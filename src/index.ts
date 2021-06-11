@@ -15,6 +15,8 @@ app.use(route)
 const db = process.env.MONGO_DB
 const connecter = process.env.MONGO_CONNECTER
 
+console.log(`mongodb+srv://${connecter}/${db}`);
+
 mongoose.connect(`mongodb+srv://${connecter}/${db}`, {
     useCreateIndex: true,
     useNewUrlParser: true,
