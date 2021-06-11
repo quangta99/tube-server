@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-import { getPlayList } from '../Services/youtube.Service'
+import { getPlayList } from '../Services/youtube.service'
 import { Playlits } from '../Models/playlist.model'
 
 export const importPlaylistByChannelId = async(req: Request, res: Response): Promise<Response> => {

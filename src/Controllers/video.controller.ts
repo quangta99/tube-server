@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-import { getPlayListItems } from '../Services/youtube.Service'
+import { getPlayListItems } from '../Services/youtube.service'
 import { Video } from '../Models/video.model'
 import { removeAccents } from '../Utils'
 
