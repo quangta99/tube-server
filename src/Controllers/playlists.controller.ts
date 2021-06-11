@@ -18,8 +18,10 @@ export const importPlaylistByChannelId = async(req: Request, res: Response): Pro
 }
 
 export const getPlaylists = async(req:Request, res:Response): Promise<Response>  => {
+    console.log('is called');
     try {
         const result = await Playlits.find({})
+        console.log('result :>> ', result);
         return res.status(200).send(result)
     }   
     catch(e) {
